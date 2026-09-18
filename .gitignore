@@ -1,13 +1,81 @@
-node_modules
-dist
-.astro
-.emdash/migrations.json
-uploads
-data.db
+```
+# Dependencies
+node_modules/
 
-# Environment / Wrangler secrets
+# Build artifacts
+dist/
+build/
+.nuxt/
+.next/
+.vercel/
+
+# Environment variables
 .env
+.env.local
 .env.*
-!.env.example
-.dev.vars
-.dev.vars.*
+
+# Logs
+*.log
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Coverage
+coverage/
+htmlcov/
+.coverage
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+.PyCharmCache/
+.mypy_cache/
+.pytest_cache/
+.tox/
+
+# Node.js
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# Compressed files
+*.zip
+*.gz
+*.tar
+*.tgz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.zst
+*.lz4
+*.lzh
+*.cab
+*.arj
+*.rpm
+*.deb
+*.Z
+*.lz
+*.lzo
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.zst
+```

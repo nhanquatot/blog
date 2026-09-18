@@ -22,4 +22,8 @@
 	"triggers": {
 		"crons": ["* * * * *"],
 	},
+	// Environment variables for authentication
+	"vars": {
+		"EMDASH_AUTH_MAGIC_LINK_ENABLED": "true",
+	},
 }

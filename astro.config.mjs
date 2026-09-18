@@ -22,6 +22,15 @@ export default defineConfig({
 			sandboxed: [webhookNotifier],
 			sandboxRunner: sandbox(),
 			marketplace: "https://marketplace.emdashcms.com",
+			auth: {
+				magicLink: {
+					enabled: true,
+					fromEmail: process.env.EMDASH_AUTH_MAGIC_LINK_FROM_EMAIL || "noreply@yourdomain.com",
+					subject: process.env.EMDASH_AUTH_MAGIC_LINK_SUBJECT || "Your login link",
+				},
+				jwtSecret: process.env.EMDASH_AUTH_JWT_SECRET || "change-this-to-a-random-secret-in-production",
+				allowedEmails: process.env.EMDASH_AUTH_ALLOWED_EMAILS?.split(",") || [],
+			},
 		}),
 	],
 	fonts: [
